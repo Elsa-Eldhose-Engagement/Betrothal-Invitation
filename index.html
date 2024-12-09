@@ -140,147 +140,7 @@ body {
     color: #f8f9fa;
 }
 
-/* Countdown number styling */
-.countdown-bubble div {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-.countdown-bubble span {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: #fff;
-}
-
-/* Celebration message font styling */
-#celebrationMessage h2 {
-    font-family: 'Dancing Script', cursive; /* Soft, flowing font for the message */
-    font-size: 2rem;
-    color: #dc3545; /* Deep red to match the celebration theme */
-    margin-top: 20px;
-}
-
-
-        /* Wedding date section styling */
-.wedding-date-bg {
-    background-size: cover;
-    background-position: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    position: relative;
-}
-
-/* Corner decoration styling */
-.corner-flower {
-    position: absolute;
-    width: 120px;
-}
-
-.corner-flower.top-right {
-    top: 0;
-    right: 0;
-}
-
-.corner-flower.bottom-left {
-    bottom: 0;
-    left: 0;
-}
-
-.top-flower {
-    position: absolute;
-    top: 0;  /* Place at the very top of the container */
-    left: 50%;  /* Center horizontally */
-    transform: translateX(-50%);  /* Adjust for perfect centering */
-    z-index: 2;  /* Ensure it appears above other content */
-    width: auto;  /* Let the image scale naturally */
-    max-height: 150px;  /* Control the height of the image */
-    object-fit: contain;  /* Maintain aspect ratio */
-    display: block;
-    margin-top: -10px;  /* Optional: slight shift upwards to fine-tune placement */
-}
-
-
-
-/* Countdown bubble styling */
-.countdown-bubble {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #153f7e; /* Light pastel blue */
-    color: #fff;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-/* Countdown label styling */
-.countdown-bubble span {
-    font-size: 0.8rem;
-    font-weight: normal;
-    color: #fff;
-    margin-top: 5px;
-}
-
-/* Border styling */
-.wedding-date {
-    border: 15px double rgba(135, 206, 235, 0.7); /* Light pastel blue border */
-    border-radius: 10px;
-}
-
-/* Container for petals */
-#wedding-date-bg {
-  position: relative;
-  overflow: hidden;
-}
-
-#petals-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Style for each petal */
-.petal {
-  position: absolute;
-  width: 15px;
-  height: 20px;
-  background: #9671f3;
-  opacity: 0.1;
-  border-radius: 50% 50% 50% 0;
-  transform-origin: right bottom;
-  animation: fall linear infinite;
-}
-
-/* Petal falling animation */
-@keyframes fall {
-  0% {
-    transform: translateX(0) rotate(0deg);
-    top: -10%;
-    opacity: 0.9;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    transform: translateX(100px) rotate(360deg);
-    top: 110%;
-    opacity: 0;
-  }
-}
-
-
-
-        /* Bride and Groom Section */
+	    /* Bride and Groom Section */
         .bride-groom {
             padding: 40px 20px;
             background-color: #f9f9f9;
@@ -811,37 +671,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }, 13000); // Let the heart exist longer
         }
 
-        setInterval(createHeart, 300);
-
-
-		// Countdown Timer
-        const weddingDate = new Date("December 29, 2024 00:00:00").getTime();
-        
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const distance = weddingDate - now;
-
-            // If the target date has passed, set all countdown values to zero
-            if (distance <= 0) {
-                document.getElementById("days").innerText = "00";
-                document.getElementById("hours").innerText = "00";
-                document.getElementById("minutes").innerText = "00";
-                document.getElementById("seconds").innerText = "00";
-
-                // Show celebration message
-                document.getElementById("celebrationMessage").style.display = "block";
-                clearInterval(countdownInterval); // Stop the countdown interval
-            } else {
-                // Update the countdown values
-                document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
-                document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
-            }
-        }
-
-        const countdownInterval = setInterval(updateCountdown, 1000);
-       
+        setInterval(createHeart, 300);      
 
         // Carousel Logic
         const images = [
@@ -879,25 +709,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Initialize WOW.js
     new WOW().init();
-	
-	// Function to create a single petal
-function createPetal() {
-  const petal = document.createElement("div");
-  petal.classList.add("petal");
-
-  // Randomize petal properties
-  petal.style.left = `${Math.random() * 100}vw`; // Random horizontal position
-  petal.style.animationDuration = `${Math.random() * 3 + 3}s`; // Vary fall speed
-  petal.style.animationDelay = `${Math.random() * 2}s`; // Stagger start times
-
-  document.getElementById("petals-container").appendChild(petal);
-
-  // Remove petal after animation completes
-  setTimeout(() => petal.remove(), 6000);
-}
-
-// Generate petals at intervals
-setInterval(createPetal, 600); // Adjust interval for more or fewer petals
 
     // Get all navigation links
     const navLinks = document.querySelectorAll('.navbar ul li a');
