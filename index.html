@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldhose & Elsa Wedding Invitation</title>
+	<meta property="og:title" content="You're Invited to Our Wedding!">
+    <meta property="og:description" content="Join us for Elsa & Eldhose's betrothal on December 26, 2024.">
+    <meta property="og:image" content="https://github.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/blob/main/invitation-preview-image.jpeg?raw=true">
+    <meta property="og:url" content="https://eldhose-elsa.github.io/Eldhose-and-Elsa-Wedding-Invitation/">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="You're Invited to Our Wedding!">
+    <meta name="twitter:description" content="Join us for Elsa & Eldhose's betrothal on December 26, 2024.">
+    <meta name="twitter:image" content="https://github.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/blob/main/invitation-preview-image.jpeg?raw=true">
+    <meta name="twitter:url" content="https://eldhose-elsa.github.io/Eldhose-and-Elsa-Wedding-Invitation/">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&family=Open+Sans:wght@400&family=Roboto:wght@700&family=Dancing+Script:wght@400&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Basic Styling */
+		
+	/* Animation Classes */
+.animate-slide {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-slide.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Divider Icon Styling */
+.divider-icon {
+    margin: 20px 0;
+    width: 50px;
+    height: auto;
+    opacity: 0.8;
+}
+
+		
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Playfair Display', serif;
+            background-color: #e2f5f9;
+        }
+
+        .section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* Intro Section */
+        .intro {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh; /* Keep this full screen */
+            animation: zoomIn 2s ease-in-out;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .intro h1 {
+            font-size: 4em;
+            font-family: 'Great Vibes', cursive;
+            margin: 0;
+        }
+
+        .intro h2 {
+            font-style: italic;
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .intro h3 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Carousel Controls */
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .carousel-controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+            border-radius: 5px;
+        }
+		
+		/* General font styling */
+body {
+    font-family: 'Playfair Display', serif; /* Elegant font for headings */
+}
+
+.wedding-date h4 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.wedding-date h1 {
+    font-family: 'Great Vibes', cursive; /* Script font for a romantic touch */
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.wedding-date p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #f8f9fa;
+}
+
+/* Countdown number styling */
+.countdown-bubble div {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.countdown-bubble span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+/* Celebration message font styling */
+#celebrationMessage h2 {
+    font-family: 'Dancing Script', cursive; /* Soft, flowing font for the message */
+    font-size: 2rem;
+    color: #dc3545; /* Deep red to match the celebration theme */
+    margin-top: 20px;
+}
+
+
+        /* Wedding date section styling */
+.wedding-date-bg {
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+/* Corner decoration styling */
+.corner-flower {
+    position: absolute;
+    width: 120px;
+}
+
+.corner-flower.top-right {
+    top: 0;
+    right: 0;
+}
+
+.corner-flower.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.top-flower {
+    position: absolute;
+    top: 0;  /* Place at the very top of the container */
+    left: 50%;  /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust for perfect centering */
+    z-index: 2;  /* Ensure it appears above other content */
+    width: auto;  /* Let the image scale naturally */
+    max-height: 150px;  /* Control the height of the image */
+    object-fit: contain;  /* Maintain aspect ratio */
+    display: block;
+    margin-top: -10px;  /* Optional: slight shift upwards to fine-tune placement */
+}
+
+
+
+/* Countdown bubble styling */
+.countdown-bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #153f7e; /* Light pastel blue */
+    color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Countdown label styling */
+.countdown-bubble span {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Border styling */
+.wedding-date {
+    border: 15px double rgba(135, 206, 235, 0.7); /* Light pastel blue border */
+    border-radius: 10px;
+}
+
+/* Container for petals */
+#wedding-date-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+#petals-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Style for each petal */
+.petal {
+  position: absolute;
+  width: 15px;
+  height: 20px;
+  background: #9671f3;
+  opacity: 0.1;
+  border-radius: 50% 50% 50% 0;
+  transform-origin: right bottom;
+  animation: fall linear infinite;
+}
+
+/* Petal falling animation */
+@keyframes fall {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    top: -10%;
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(100px) rotate(360deg);
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+
+
+        /* Bride and Groom Section */
+        .bride-groom {
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+            height: auto; /* Allow auto height for better spacing */
+        }
+
+        .bride-groom h2 {
+            font-size: 2em;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .bride-groom img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+        }
+
+        .bride-groom p {
+            color: #555;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+       
+
+        /* Media Query for Small Screens */
+        @media (max-width: 600px) {
+            .intro h1 { font-size: 2.5em; }
+            .intro h2, .intro h3 { font-size: 1.2em; }
+            .countdown h2 { font-size: 1.5em; }
+            .flip-clock div span { font-size: 1.5em; padding: 10px; min-width: 50px; }
+        }
+		
+		 /* Slow Falling Hearts */
+        .heart {
+            position: absolute;
+            width: 32px;
+            height: 29.6px;
+            fill: red;
+            pointer-events: none;
+            animation: fall 10s linear infinite; /* Slower fall */
+        }
+
+        @keyframes fall {
+            0% {
+                top: -10%;
+                opacity: 1;
+            }
+            100% {
+                top: 100vh;
+                opacity: 0;
+            }
+        }
+
+	    /* Invitation Section */
+.invitation {
+    padding: 50px 20px;
+    background-color: #ffe6e6;
+    border-radius: 10px;
+}
+
+.invitation h2 {
+    font-size: 2em;
+    font-family: 'Great Vibes', cursive;
+    color: #b30000;
+}
+
+.invitation p {
+    font-size: 1.2em;
+    color: #660000;
+}
+
+/* Gallery Carousel Styling */
+.gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carousel-main img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.carousel-thumbnails img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.carousel-thumbnails img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Footer styling */
+.footer {
+    background-color: #f8f9fa; /* Light background color */
+    color: #555; /* Dark text color */
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Optional: Add a heart emoji or icon */
+.footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+
+/* Additional CSS for Styling */
+.section-when-where {
+    background-color: #e2f5f9;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.card-style {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card-style:hover {
+    transform: scale(1.05);
+}
+
+.card-style h4 {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-style h4 i {
+    margin-right: 8px;
+    color: #ff6f61;
+}
+
+.map-container {
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.map-container:hover {
+    transform: scale(1.02);
+}
+
+/* Entrance Animation */
+.animate-slide {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-in-out;
+}
+
+.animate-slide.wow.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Divider Icon Styling */
+.divider-icon {
+    margin: 20px 0;
+    width: 50px;
+    height: auto;
+    opacity: 0.8;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #333;
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Hover Effects */
+.navbar ul li a:hover {
+    color: #dc3545; /* Highlight color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Active Link Highlight */
+.navbar ul li a.active {
+    color: #364385; /* Color for the active link */
+    font-weight: bold; /* Bold text for active link */
+}
+
+/* Add padding to the top of sections to avoid overlap with the fixed navbar */
+.section {
+    padding-top: 60px; /* Adjust for navbar height */
+    margin-top: -60px; /* Prevent extra space caused by padding */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Stack navbar items vertically on small screens */
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    /* Show a hamburger icon for mobile view */
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    /* Hide the navbar links initially on mobile */
+    .navbar ul li {
+        display: none;
+    }
+    
+    /* Show navbar links when hamburger icon is clicked */
+    .navbar ul.show {
+        display: block;
+    }
+}
+
+
+<style>
+    #video-section {
+        text-align: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    #video-section iframe {
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+    </style>
+</head>
+<body>
+	<!-- Navigation Bar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#intro">Home</a></li>
+        <li><a href="#invitation">Invitation</a></li>
+        <li><a href="#bride-groom">Bride & Groom</a></li>
+		<li><a href="#when-where">When & Where</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+		<li><a href="#video">Video</a></li>
+    </ul>
+</nav>
+	
+	<!-- Falling Hearts -->
+    <div class="falling-hearts"></div>
+    <!-- Intro Section with Carousel -->
+    <div id="intro" class="section intro">
+        <h1>Eldhose</h1>
+        <h2>&</h2>
+        <h1>Elsa</h1>
+        <h2>We are Getting Married</h2>
+        		
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+            <button onclick="prevImage()">&#60;</button>
+            <button onclick="nextImage()">&#62;</button>
+        </div>
+    </div>
+
+		<!-- Invitation Section -->
+	<div class="animate-slide">
+    <div id="invitation" class="section invitation">
+        <h2>Dear Family & Friends,</h2>
+        <p><b></b>We Eldhose & Elsa</b></p>
+	<p>With joyful hearts, invite you to be part of our special day.
+	<br>Join us as we exchange vows and begin our forever.</p>
+	    
+	<p>Your presence will mean the world to us!</p>
+    </div>
+	</div>
+	<!-- Bride and Groom Section -->
+<div id="bride-groom" class="section bride-groom" style="background-image: url('https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/img/Background/blue-brush-5.jpg'); background-size: cover; background-position: center;">
+    <h2>Meet the Bride & Groom</h2>
+    <div class="row">
+        <div class="animate-slide">
+            <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/Bride.jpeg" alt="Bride Image" class="img-fluid">
+            <h3>Elsa</h3>
+            <p>Daughter of Sabu</p> <p>and</p> <p>Late Rini Sabu</p>
+            <p>Thekkumkattil</p> <p> Mudavoor</p>
+        </div>
+        <div class="animate-slide">
+            <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/Groom.jpeg" alt="Groom Image" class="img-fluid">
+            <h3>Eldhose</h3>
+            <p>Son of Joseph</p> <p>and</p> <p>Aleykutty Joseph</p>
+            <p>Kalarickal </p> <p> Nellimolam</p>
+        </div>
+    </div>
+</div>
+<!-- Bride and Groom Section End -->
+
+
+<div id="gallery"  class="section gallery" style="background-image: url('https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/img/Background/blue-brush-7.jpg'); background-size: cover; background-position: center;">
+    <h2>Our Journey Together</h2>
+    
+    <!-- Main Display Image -->
+    <div class="carousel-main">
+        <img id="current-image" src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-1.jpg" alt="Current Image">
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="carousel-thumbnails">
+        <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-1.jpg" alt="Memory 1" onclick="changeImage(this)">
+        <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-2.jpg" alt="Memory 2" onclick="changeImage(this)">
+        <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-3.jpg" alt="Memory 3" onclick="changeImage(this)">
+		<img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-4.jpg" alt="Memory 4" onclick="changeImage(this)">
+		<img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-5.jpg" alt="Memory 5" onclick="changeImage(this)">
+		<img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-6.jpg" alt="Memory 6" onclick="changeImage(this)">
+		<img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-7.jpg" alt="Memory 7" onclick="changeImage(this)">
+		<img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-8.jpg" alt="Memory 8" onclick="changeImage(this)">
+		<img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-9.jpg" alt="Memory 9" onclick="changeImage(this)">
+		<img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/gallery-10.jpg" alt="Memory 10" onclick="changeImage(this)">
+        <!-- Add more images as needed -->
+    </div>
+</div>
+
+<!-- Video Section -->
+<section id="video" style="padding: 40px 0; text-align: center;">
+    <div class="container">
+        <!-- Section Title centered -->
+        <h2 class="section-title" style="text-align: center; margin-bottom: 20px;">First Step Together</h2>
+        <p style="font-size: 18px;">A glimpse of the day we set the foundation for our future together.</p>
+        
+        <!-- Video Embedding -->
+        <div  class="video-container" style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mP94Egm2O7M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+ </div>
+</section>
+<!-- End of Video Section -->
+	
+    <!-- Wedding Date Section with Countdown -->
+<div class="container-fluid wedding-date-bg position-relative py-5" style="background-image: url('https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/img/Background/blue-brush-4.jpg'); background-size: cover; background-position: center;">
+    <!-- Corner Decoration Images -->
+
+	<div class="top-flower">
+    <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/img/Flowers/top-right-1.svg" alt="Top Flower">
+</div>
+
+    <div class="corner-flower top-right">
+        <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/img/Flowers/top-right-1.svg" class="img-fluid" alt="Top Right Flower">
+    </div>
+    <div class="corner-flower bottom-left">
+        <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/img/Flowers/bottom-left-1.svg" class="img-fluid" alt="Bottom Left Flower">
+    </div>
+
+    <!-- Countdown Content -->
+    <div class="container py-5 wow zoomIn" data-wow-delay="0.1s">
+        <div class="wedding-date text-center p-5" style="border: 15px double rgba(176, 224, 230, 0.7); border-radius: 10px;">
+            <div class="wedding-date-content">
+                <div class="d-inline-block mb-4" style="border-style: double; border-width: 3px; padding: 8px;">
+                    <h4 class="text-dark text-uppercase fw-bold mb-0" style="letter-spacing: 3px;">December 29, 2024</h4>
+                </div>
+                <h1 class="display-4 text-white">We Are Getting Married</h1>
+                	<div id="petals-container"></div>
+                <!-- Countdown Section -->
+                <div id="countdown" class="d-flex align-items-center justify-content-center mb-5 gap-4">
+                    <div class="countdown-bubble">
+                        <div id="days">00</div>
+                        <span>Days</span>
+                    </div>
+                    <div class="countdown-bubble">
+                        <div id="hours">00</div>
+                        <span>Hours</span>
+                    </div>
+                    <div class="countdown-bubble">
+                        <div id="minutes">00</div>
+                        <span>Mins</span>
+                    </div>
+                    <div class="countdown-bubble">
+                        <div id="seconds">00</div>
+                        <span>Secs</span>
+                    </div>
+                </div>
+
+                <!-- Celebration GIF and Message (Initially Hidden) -->
+                <div id="celebrationMessage" class="text-center" style="display: none;">
+                    <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/wedding%20celebration.gif" style="max-width: 50%; height: 50%; margin: 0 auto;" alt="Celebration">
+                    <h2 class="text-danger mt-4">The love of a lifetime starts today!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+	<!--Location Start -->
+	<div id="when-where" class="mt-5 section-when-where">
+    <div class="row g-5 justify-content-center text-center">
+        <!-- When -->
+        <div class="col-md-5 animate-slide">
+            <div class="p-4 border-secondary card-style">
+                <h4><i class="fas fa-calendar-day"></i> When</h4>
+                <p class="mb-0 text-dark">
+                    29 December 2024, at 12 o’clock in the evening
+                </p>
+            </div>
+        </div>
+
+        <!-- Divider with Icon -->
+        <div class="col-12 text-center">
+            <img src="https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/img/Flowers/favicon.png" 
+                 alt="Divider Icon" class="divider-icon">
+        </div>
+
+        <!-- Where -->
+        <div class="col-md-5 animate-slide">
+            <div class="p-4 border-secondary card-style">
+                <h4><i class="fas fa-map-marker-alt"></i> Where</h4>
+                <p class="mb-0 text-dark">
+                    St. George Jacobite Syrian Church Hall,<br Thrikkalathoor>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Map Section -->
+    <div class="row g-5 justify-content-center text-center mt-5">
+        <div class="col-md-10">
+            <h4 class="mb-4">Meet Us here</h4>
+            <div class="map-container">
+                <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.842350292676!2d76.5493876!3d10.0298651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e6d530e67c09%3A0xd4f060843b5bf8d9!2sSt.%20George%20Jacobite%20Syrian%20Church%2C%20Thrikkalathoor!5e0!3m2!1sen!2sin!4v1733728864364!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!--Locatoion End -->
+
+<!-- Footer Section -->
+<footer class="footer text-center py-3">
+    <p class="mb-0">Created with ❤️ for Elsa</p>
+</footer>
+
+	<!--Footer Section End -->
+	
+
+    <script>
+	    // Get all elements with the fade-in-up class
+document.addEventListener('DOMContentLoaded', function () {
+    const elements = document.querySelectorAll('.animate-slide');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fadeIn');
+                observer.unobserve(entry.target); // Stop observing once animated
+            }
+        });
+    }, { threshold: 0.1 }); // Trigger animation when 10% of the element is in view
+
+    elements.forEach(el => observer.observe(el));
+});
+
+
+		// Create a falling heart SVG
+        function createHeart() {
+            const heart = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+            heart.setAttribute("class", "heart");
+            heart.setAttribute("viewBox", "0 0 32 29.6");
+            heart.innerHTML = '<path d="M23.6,0c-2.9,0-5.5,1.4-7.6,3.5C13.8,1.4,11.3,0,8.4,0C3.8,0,0,3.8,0,8.4c0,11.4,16,21.2,16,21.2s16-9.9,16-21.2C32,3.8,28.2,0,23.6,0z"/>';
+            document.body.appendChild(heart);
+
+            heart.style.left = `${Math.random() * 100}vw`;
+            heart.style.animationDuration = `${Math.random() * 5 + 8}s`; // Slow falling
+            heart.style.transform = `scale(${Math.random() * 0.8 + 0.5})`; // Random scaling for size variety
+
+            setTimeout(() => {
+                heart.remove();
+            }, 13000); // Let the heart exist longer
+        }
+
+        setInterval(createHeart, 300);
+
+
+		// Countdown Timer
+        const weddingDate = new Date("December 29, 2024 00:00:00").getTime();
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            // If the target date has passed, set all countdown values to zero
+            if (distance <= 0) {
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+
+                // Show celebration message
+                document.getElementById("celebrationMessage").style.display = "block";
+                clearInterval(countdownInterval); // Stop the countdown interval
+            } else {
+                // Update the countdown values
+                document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+                document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+            }
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+       
+
+        // Carousel Logic
+        const images = [
+            "https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/slider-1.jpg",
+            "https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/slider-2.jpg",
+            "https://raw.githubusercontent.com/Eldhose-Elsa/Eldhose-and-Elsa-Wedding-Invitation/main/slider-3.jpg"
+        ];
+
+        let currentImageIndex = 0;
+
+        function updateCarousel() {
+            document.querySelector('.intro').style.backgroundImage = `url(${images[currentImageIndex]})`;
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            updateCarousel();
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        }
+
+        // Initialize Carousel
+        updateCarousel();
+		
+		function changeImage(thumbnail) {
+    // Get the main image element
+    const mainImage = document.getElementById('current-image');
+    
+    // Update the source of the main image to match the clicked thumbnail
+    mainImage.src = thumbnail.src;
+}
+    
+    // Initialize WOW.js
+    new WOW().init();
+	
+	// Function to create a single petal
+function createPetal() {
+  const petal = document.createElement("div");
+  petal.classList.add("petal");
+
+  // Randomize petal properties
+  petal.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+  petal.style.animationDuration = `${Math.random() * 3 + 3}s`; // Vary fall speed
+  petal.style.animationDelay = `${Math.random() * 2}s`; // Stagger start times
+
+  document.getElementById("petals-container").appendChild(petal);
+
+  // Remove petal after animation completes
+  setTimeout(() => petal.remove(), 6000);
+}
+
+// Generate petals at intervals
+setInterval(createPetal, 600); // Adjust interval for more or fewer petals
+
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('.navbar ul li a');
+    
+    // Get all sections
+    const sections = document.querySelectorAll('.section');
+    
+    // Function to update active link based on scroll position
+    window.addEventListener('scroll', () => {
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute('id'); // Assuming each section has an id
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
